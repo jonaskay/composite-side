@@ -4,16 +4,27 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "develop": "webpack-dev-server",
+    "test": "jest -c jest.config.system.js",
+    "test:system": "jest -c jest.config.system.js"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
+    "@babel/plugin-transform-runtime": "^7.7.6",
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-react": "^7.7.4",
+    "@babel/runtime": "^7.7.7",
+    "babel-jest": "^24.9.0",
     "babel-loader": "^8.0.6",
+    "html-loader": "^0.5.5",
+    "jest": "^24.9.0",
+    "puppeteer": "^2.0.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "webpack": "^4.41.4",
-    "webpack-cli": "^3.3.10"
-  }
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  },
+  "dependencies": {}
 }
